@@ -1,11 +1,19 @@
+# Author: Aalap Parikh.
+# Date: February 19, 2018.
+
+
 import math
-import operator
+
+
+# Gaussian Naive Bayes Classifier.
 
 # Steps:
 # 1. Calculate class priors P(1), P(2)
 # 2. Divide the dataset into two parts, 1 and 2.
 # 3. Calculate mean and stdev for all attributes separately for both classes.
-# 4. For a new data-point, calculate
+# 4. For a new data-point, calculate joint probabilities for both classes and output the class with the higher probability.
+# 5. Perform k fold cross validation.
+
 
 def readFile(filePath):
 	with open(filePath) as f:
